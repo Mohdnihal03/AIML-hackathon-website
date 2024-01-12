@@ -2877,10 +2877,7 @@ li.stylish-list {
 
 
 /* Base styles */
-.sponsors-section {
-  display: flex;
-  justify-content: center;
-}
+
 
 .sponsors-section-section {
   display: flex;
