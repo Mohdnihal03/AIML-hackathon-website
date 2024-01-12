@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Montserrat|Roboto:500,700');
 html {
   overflow-x: hidden;
 }
@@ -305,7 +305,7 @@ ol li {
 }
 
 .about-text p {
-  font-family: monospace;
+  font-family: 'Montserrat';
   font-size: 20px;
   letter-spacing: 0.2px;
 }
@@ -2863,13 +2863,84 @@ li.stylish-list {
 }
 
 
-.stylish-list-nil p{
+/* .stylish-list-nil p{
   font-family: monospace;
   letter-spacing: 0.2px;
   font-size: 40px;
   
-}
+} */
 .prize-desc {
   font-size: 20px;
   display: none;
+}
+
+
+
+/* Base styles */
+.sponsors-section {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsors-section-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #000000;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.sponsors {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sponsors h1 {
+  background-image: linear-gradient(90deg, hsl(210, 100%, 50%), hsl(240, 75%, 36%));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Poppins;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.sponsors-list {
+  width: 100%;
+  padding: 0 30px; /* Adjusted padding for better responsiveness */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.sponsors-list-list {
+  margin: 20px;
+}
+
+.sponsors-list img {
+  margin-bottom: 10px;
+  margin-left: 20px; /* Adjust the value to your preference */
+}
+
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .sponsors-section-section,
+  .sponsors-list {
+    width: 100%; /* Make sections full width on smaller screens */
+  }
+
+  .sponsors-list {
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .mentors-list {
+    height: auto; /* Allow height to adjust based on content */
+  }
 }
